@@ -1,0 +1,121 @@
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "productos aside"
+    "info info"
+    "footer footer"
+    ;
+    grid-template-rows: 100px 620px 320px 255px;
+    grid-template-columns: 60% 40%;
+    height: 100vh;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+header{
+    grid-area: nav;
+}
+
+section{
+    grid-area: productos;
+}
+
+aside{
+    grid-area: aside;
+}
+
+footer{
+    grid-area: footer;
+}
+article{
+    grid-area: info;
+}
+
+.logo{
+    margin:15px 0px 15px 15px;
+    height:70px;
+    width:70px;
+}
+
+.header-container{
+    display: flex;
+    align-content: center;
+    justify-content:space-between;
+    background-color: darkcyan;
+}
+
+.header-li{
+    list-style: none;
+    margin-left: 15px;
+}
+
+.header-ul{
+    display: flex;
+    align-items: end;
+    margin: 0px 40px 20px 0px;
+}
+
+.header-li a{
+    font-weight: bolder;
+    color:aliceblue;
+}
+
+/* Section - Productos ---------------------------- */
+
+.section-productos{
+    display: grid;
+    justify-content: center;
+    align-items: end;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px 10px;
+    margin: 20px;
+}
+
+.border-productos{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/* Footer ---------------------------- */
+
+footer{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: gray;
+}
+
+.container-footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_ul li{
+    list-style: none;
+    color: white;
+    font-weight:bold;
+}
+
+.fooger_ul_redes{
+    list-style: none;
+    display: flex;
+    margin-left: 15px;
+}
+
+.fooger_ul_redes li a{
+   margin-left: 20px;
+}
+
+.map ul li{
+    list-style: none;
+    margin-top: 8px;
+    font-size: small;
+}

@@ -1,0 +1,18 @@
+.section{
+    min-height: 100vh;
+}
+
+.section_cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* .section_carousel{
+   width: 100%; 
+} */
+
+.carousel{
+    margin: 0px 0px 50px 0px;
+}
+
